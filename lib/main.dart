@@ -12,21 +12,25 @@ class _PerguntaAppState extends State<PerguntaApp>{
   
   final List<Map<String, Object>> _perguntas= const [
       {
-        'texto': 'Qual é a sua cor favorita?', 
+        'texto': 'Quem foram os três astronautas que tripularam a Saturn V em 1969?', 
         'respostas': [
-             {'texto': 'Amarelo', 'nota': 3},
-             {'texto': 'Vermelho', 'nota': 3},
-             {'texto': 'Verde', 'nota':7},
-             {'texto': 'Azul', 'nota':10}
+             {'texto': 'Neil Armstrong, Michael Collins e Johannes Kepler', 'nota': 0},
+             {'texto': 'Carl Sagan, Buzz Aldrin e Michael Collins', 'nota': 0},
+             {'texto': 'Michael Collins, Buzz Aldrin e Neil Armstrong', 'nota': 1},
+             {'texto': 'Richard Feynman, Enrico Fermi e Neil Armstrong', 'nota': 0}
           ]
       },
       {
-        'texto': 'Qual é o seu animal favorito?',
-        'respostas': [{'texto': 'Panda', 'nota': 9},{'texto': 'Pantera', 'nota': 8},{'texto': 'Capivara','nota': 4},{'texto': 'Lontra', 'nota': 10} ]
+        'texto': 'O Neônio é um...',
+        'respostas': [{'texto': 'Metal de transição', 'nota': 0},{'texto': 'Ametal', 'nota': 0},{'texto': 'Metal alcalino','nota': 0},{'texto': 'Gás nobre', 'nota': 1} ]
       },
       {
-        'texto': 'Qual o seu filme/serie favorito?',
-        'respostas': [{'texto': 'Game of Thrones', 'nota':9},{'texto': 'Lord of the rings', 'nota': 8},{'texto':'Interstellar' , 'nota': 10},{'texto': 'Lost in space', 'nota': 5} ]
+        'texto': 'Qual desses componentes possui entre suas finalidades limitar a corrente elétrica?',
+        'respostas': [{'texto': 'Resistor', 'nota':1},{'texto': 'Transistor', 'nota': 0},{'texto':'Capacitor' , 'nota': 0},{'texto': 'Indutor', 'nota': 0} ]
+      },
+      {
+        'texto': 'A expressão "F = m.a" também é chamada de:',
+        'respostas': [{'texto': 'Primeira lei de Newton', 'nota':0},{'texto': 'Efeito Joule', 'nota': 0},{'texto':'Princípio Fundamental da Dinâmica' , 'nota': 1},{'texto': 'Segunda Lei de Kepler', 'nota': 0} ]
       }
   ];
   
@@ -61,7 +65,7 @@ class _PerguntaAppState extends State<PerguntaApp>{
       home: Scaffold(
         appBar: AppBar(title: Text('Perguntas'), ),
         body: temPerguntaSelecionada 
-        ? Questionario(perguntas: _perguntas, perguntaSelecionada: _perguntaSelecionada, responder: _responder) 
+        ? Questionario(perguntas: _perguntas, perguntaSelecionada: _perguntaSelecionada, responder: _responder)
         : Resultado(_pontuacaoTotal, _reiniciarForm) 
       ),
 

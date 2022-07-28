@@ -1,16 +1,13 @@
-# projeto_perguntas
+# SimpleQuiz (Flutter)
 
-A new Flutter project.
+Projeto Flutter - Questionário
 
-## Getting Started
+## Sobre
 
-This project is a starting point for a Flutter application.
+    Este projeto é um ponto de partida para meus estudos com Dart e Flutter.
+    Por meio deste projeto busco praticar, estudar e aprimorar meus conhecimentos em programação.
+    Aceito sugestões e dicas e ficaria muito feliz de as receber, afinal, conhecimento nunca é demais!
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    *Discord: Playyy#1169
+    *Twitter: @Playyy7
+    
